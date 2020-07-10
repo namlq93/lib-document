@@ -9,11 +9,11 @@ func ScaleImage(i image.Image, w, h int) (image.Image, error)
 
 **Input param:**
 
-i: Image need to scale width and height
+- i: Image need to scale width and height
 
-w: output width
+- w: output width
 
-h: output height
+- h: output height
 
 <br>
 
@@ -24,11 +24,11 @@ func EncodeImage(buf io.Writer, i image.Image, ext string) error
 
 **Input param:**
 
-buf: writer
+- buf: writer
 
-i: image need to encode
+- i: image need to encode
 
-ext: extension of input image
+- ext: extension of input image
 
 <br>
 
@@ -39,7 +39,7 @@ func GetImageByPath(path string) (draw.Image, string)
 
 **Input param:**
 
-path: path of image need to get
+- path: path of image need to get
 
 <br>
 
@@ -50,9 +50,9 @@ func GetImageByPathWithRect(path string, rect image.Rectangle) (draw.Image, stri
 
 **Input param:**
 
-path: path of image need to get
+- path: path of image need to get
 
-rect: rectangle of image
+- rect: rectangle of image
 
 <br>
 
@@ -90,13 +90,13 @@ func CreatePager(ctx context.Context, count, perpage, current int64) (*Pager, er
 
 **Input param:**
 
-ctx: a context
+- ctx: a context
 
-count: total result
+- count: total result
 
-perpage: number result per page
+- perpage: number result per page
 
-current: current page
+- current: current page
 
 <br>
 
@@ -107,9 +107,9 @@ func getLocation(location string, page int64) string
 
 **Input param:**
 
-location: current location
+- location: current location
 
-page: specified page need to get location
+- page: specified page need to get location
 
 <br>
 
@@ -122,9 +122,9 @@ func paramTo(kind reflect.Kind, param string) (interface{}, bool, error)
 
 **Input param:**
 
-kind: type need to convert to
+- kind: type need to convert to
 
-param: a URL param
+- param: a URL param
 
 <br>
 
@@ -135,7 +135,7 @@ func ParamToInt64(param string) (int64, bool, error)
 
 **Input param:**
 
-param: a URL param
+- param: a URL param
 
 <br>
 
@@ -146,7 +146,7 @@ func ParamToStr(param string) (string, bool, error)
 
 **Input param:**
 
-param: a URL param
+- param: a URL param
 
 <br>
 
@@ -160,7 +160,7 @@ func Random(n int) string
 
 **Input param:**
 
-n: number of characters
+- n: number of characters
 
 <br>
 
@@ -171,7 +171,7 @@ func RandomLC(n int) string
 
 **Input param:**
 
-n: number of characters
+- n: number of characters
 
 <br>
 
@@ -182,7 +182,7 @@ func GetHash256(str string) string
 
 **Input param:**
 
-str: string
+- str: string
 
 <br>
 
@@ -193,7 +193,7 @@ func PasswordHash(pw string) (string, error)
 
 **Input param:**
 
-pw: password
+- pw: password
 
 <br>
 
@@ -204,6 +204,6 @@ func PasswordVerify(hash, pw string) error
 
 **Input param:**
 
-hash: hash password
+- hash: hash password
 
-pw: password
+- pw: password
