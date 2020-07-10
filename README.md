@@ -53,9 +53,9 @@ func GetImageByPathWithRect(path string, rect image.Rectangle) (draw.Image, stri
 - path: path of image need to get
 
 - rect: rectangle of image
-
 <br>
 
+---
 ## Pagination
 
 ```
@@ -113,6 +113,7 @@ func getLocation(location string, page int64) string
 
 <br>
 
+---
 ## Param Ulti
 
 ```
@@ -150,7 +151,7 @@ func ParamToStr(param string) (string, bool, error)
 
 <br>
 
-
+---
 ## Ultility
 
 ```
