@@ -2,7 +2,6 @@
 
 ## Image util
 
-
 ``` 
 func ScaleImage(i image.Image, w, h int) (image.Image, error) 
 ```
@@ -42,6 +41,7 @@ func GetImageByPath(path string) (draw.Image, string)
 
 path: path of image need to get
 
+<br>
 
 ```
 func GetImageByPathWithRect(path string, rect image.Rectangle) (draw.Image, string)
@@ -54,8 +54,9 @@ path: path of image need to get
 
 rect: rectangle of image
 
-## Pagination
+<br>
 
+## Pagination
 
 ```
 type (
@@ -80,6 +81,7 @@ type (
 )
 ```
 
+<br>
 
 ```
 func CreatePager(ctx context.Context, count, perpage, current int64) (*Pager, error)
@@ -96,6 +98,7 @@ perpage: number result per page
 
 current: current page
 
+<br>
 
 ```
 func getLocation(location string, page int64) string
@@ -108,9 +111,9 @@ location: current location
 
 page: specified page need to get location
 
+<br>
 
 ## Param Ulti
-
 
 ```
 func paramTo(kind reflect.Kind, param string) (interface{}, bool, error)
@@ -123,6 +126,7 @@ kind: type need to convert to
 
 param: a URL param
 
+<br>
 
 ```
 func ParamToInt64(param string) (int64, bool, error)
@@ -133,6 +137,7 @@ func ParamToInt64(param string) (int64, bool, error)
 
 param: a URL param
 
+<br>
 
 ```
 func ParamToStr(param string) (string, bool, error)
@@ -143,8 +148,10 @@ func ParamToStr(param string) (string, bool, error)
 
 param: a URL param
 
-## Ultility
+<br>
 
+
+## Ultility
 
 ```
 func Random(n int) string
@@ -155,6 +162,7 @@ func Random(n int) string
 
 n: number of characters
 
+<br>
 
 ```
 func RandomLC(n int) string
@@ -165,6 +173,7 @@ func RandomLC(n int) string
 
 n: number of characters
 
+<br>
 
 ```
 func GetHash256(str string) string
@@ -175,6 +184,7 @@ func GetHash256(str string) string
 
 str: string
 
+<br>
 
 ```
 func PasswordHash(pw string) (string, error)
@@ -185,6 +195,7 @@ func PasswordHash(pw string) (string, error)
 
 pw: password
 
+<br>
 
 ```
 func PasswordVerify(hash, pw string) error
