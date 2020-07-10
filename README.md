@@ -2,62 +2,64 @@
 
 ## Image util
 
+### Function: ScaleImage
 ``` 
 func ScaleImage(i image.Image, w, h int) (image.Image, error) 
 ```
-**Usage:** To scale an image to specified width and height
+- **Usage:** To scale an image to specified width and height
 
-**Input param:**
+- **Input param:**
 
-- i: Image need to scale width and height
+  - i: Image need to scale width and height
 
-- w: output width
+  - w: output width
 
-- h: output height
+  - h: output height
 
-<br>
 
+### Function: EncodeImage
 ```
 func EncodeImage(buf io.Writer, i image.Image, ext string) error
 ```
-**Usage:** Write the image i to buf in jpeg, png or gif format
+- **Usage:** Write the image i to buf in jpeg, png or gif format
 
-**Input param:**
+- **Input param:**
 
-- buf: writer
+  - buf: writer
 
-- i: image need to encode
+  - i: image need to encode
 
-- ext: extension of input image
+  - ext: extension of input image
 
-<br>
 
+### Function: GetImageByPath
 ```
 func GetImageByPath(path string) (draw.Image, string)
 ```
-**Usage:** Get the image from specified path
+- **Usage:** Get the image from specified path
 
-**Input param:**
+- **Input param:**
 
-- path: path of image need to get
+  - path: path of image need to get
 
-<br>
 
+### Function: GetImageByPathWithRect
 ```
 func GetImageByPathWithRect(path string, rect image.Rectangle) (draw.Image, string)
 ```
-**Usage:** Get the image from specified path and rectangle
+- **Usage:** Get the image from specified path and rectangle
 
-**Input param:**
+- **Input param:**
 
-- path: path of image need to get
+  - path: path of image need to get
 
-- rect: rectangle of image
+  - rect: rectangle of image
 <br>
 
 ---
 ## Pagination
 
+### Function: CreatePager
 ```
 type (
 	// Pager ...
@@ -86,125 +88,127 @@ type (
 ```
 func CreatePager(ctx context.Context, count, perpage, current int64) (*Pager, error)
 ```
-**Usage:** Create a pagination pager
+- **Usage:** Create a pagination pager
 
-**Input param:**
+- **Input param:**
 
-- ctx: a context
+  - ctx: a context
 
-- count: total result
+  - count: total result
 
-- perpage: number result per page
+  - perpage: number result per page
 
-- current: current page
+  - current: current page
 
-<br>
 
+### Function: getLocation
 ```
 func getLocation(location string, page int64) string
 ```
-**Usage:** Get location (url) of specified page
+- **Usage:** Get location (url) of specified page
 
-**Input param:**
+- **Input param:**
 
-- location: current location
+  - location: current location
 
-- page: specified page need to get location
+  - page: specified page need to get location
 
 <br>
 
 ---
 ## Param Ulti
 
+### Function: paramTo
 ```
 func paramTo(kind reflect.Kind, param string) (interface{}, bool, error)
 ```
-**Usage:** Convert params to a specified type
+- **Usage:** Convert params to a specified type
 
-**Input param:**
+- **Input param:**
 
-- kind: type need to convert to
+  - kind: type need to convert to
 
-- param: a URL param
+  - param: a URL param
 
-<br>
 
+### Function: ParamToInt64
 ```
 func ParamToInt64(param string) (int64, bool, error)
 ```
-**Usage:** Convert params to type int64
+- **Usage:** Convert params to type int64
 
-**Input param:**
+- **Input param:**
 
-- param: a URL param
+  - param: a URL param
 
-<br>
 
+### Function: ParamToStr
 ```
 func ParamToStr(param string) (string, bool, error)
 ```
-**Usage:** Convert params to type string
+- **Usage:** Convert params to type string
 
-**Input param:**
+- **Input param:**
 
-- param: a URL param
+  - param: a URL param
 
 <br>
 
 ---
 ## Ultility
 
+### Function: Random
 ```
 func Random(n int) string
 ```
-**Usage:** Make a random string with n characters both uppercase and lowercase
+- **Usage:** Make a random string with n characters both uppercase and lowercase
 
-**Input param:**
+- **Input param:**
 
-- n: number of characters
+  - n: number of characters
 
-<br>
 
+### Function: RandomLC
 ```
 func RandomLC(n int) string
 ```
-**Usage:** Make a random string with n lowercase characters
+- **Usage:** Make a random string with n lowercase characters
 
-**Input param:**
+- **Input param:**
 
-- n: number of characters
+  - n: number of characters
 
-<br>
 
+### Function: GetHash256
 ```
 func GetHash256(str string) string
 ```
-**Usage:** Encrypt a string using SHA-256 algorithm
+- **Usage:** Encrypt a string using SHA-256 algorithm
 
-**Input param:**
+- **Input param:**
 
-- str: string
+  - str: string
 
-<br>
 
+### Function: PasswordHash
 ```
 func PasswordHash(pw string) (string, error)
 ```
-**Usage:** Generate a hash password from password
+- **Usage:** Generate a hash password from password
 
-**Input param:**
+- **Input param:**
 
-- pw: password
+  - pw: password
 
-<br>
 
+### Function: PasswordVerify
 ```
 func PasswordVerify(hash, pw string) error
 ```
-**Usage:** Compare password with hash password to verify
+- **Usage:** Compare password with hash password to verify
 
-**Input param:**
+- **Input param:**
 
-- hash: hash password
+  - hash: hash password
 
-- pw: password
+  - pw: password
