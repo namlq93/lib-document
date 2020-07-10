@@ -1,7 +1,7 @@
 # sympathy-backend library
 
 ## Image util
-
+Include functions handle image
 ### Function: ScaleImage
 ``` 
 func ScaleImage(i image.Image, w, h int) (image.Image, error) 
@@ -58,7 +58,7 @@ func GetImageByPathWithRect(path string, rect image.Rectangle) (draw.Image, stri
 
 ---
 ## Pagination
-
+Include functions handle pagination
 ### Function: CreatePager
 ```
 type (
@@ -117,7 +117,7 @@ func getLocation(location string, page int64) string
 
 ---
 ## Param Ulti
-
+Include functions handle param in query
 ### Function: paramTo
 ```
 func paramTo(kind reflect.Kind, param string) (interface{}, bool, error)
@@ -156,7 +156,7 @@ func ParamToStr(param string) (string, bool, error)
 
 ---
 ## Ultility
-
+Include functions handle password hash
 ### Function: Random
 ```
 func Random(n int) string
