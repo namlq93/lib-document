@@ -16,7 +16,7 @@ w: output width
 
 h: output height
 
-
+<br>
 ```
 func EncodeImage(buf io.Writer, i image.Image, ext string) error
 ```
