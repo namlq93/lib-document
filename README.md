@@ -17,6 +17,7 @@ w: output width
 h: output height
 
 <br>
+
 ```
 func EncodeImage(buf io.Writer, i image.Image, ext string) error
 ```
@@ -30,6 +31,7 @@ i: image need to encode
 
 ext: extension of input image
 
+<br>
 
 ```
 func GetImageByPath(path string) (draw.Image, string)
