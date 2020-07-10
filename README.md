@@ -213,3 +213,7 @@ func PasswordVerify(hash, pw string) error
   - hash: hash password
 
   - pw: password
+  
+---
+## Donate
+[![Donate](https://img.shields.io/badge/donate-paypal-blue.svg?style=flat-square)](https://paypal.me/namlq)
