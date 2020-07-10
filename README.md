@@ -216,4 +216,6 @@ func PasswordVerify(hash, pw string) error
   
 ---
 ## Donate
+Hi. This is **Sympathy** team. We need your support for our activity. Please donate!
+
 [![Donate](https://img.shields.io/badge/donate-paypal-blue.svg?style=flat-square)](https://paypal.me/namlq)
