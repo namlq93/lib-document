@@ -1,7 +1,8 @@
 # sympathy-backend library
+Include something helpful for project
 
 ## Image util
-Include functions handle image
+Include functions handle image (scale, encode ...)
 ### Function: ScaleImage
 ``` 
 func ScaleImage(i image.Image, w, h int) (image.Image, error) 
@@ -156,7 +157,7 @@ func ParamToStr(param string) (string, bool, error)
 
 ---
 ## Ultility
-Include functions handle password hash
+Include functions handle password hash, create token
 ### Function: Random
 ```
 func Random(n int) string
