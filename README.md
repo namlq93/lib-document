@@ -2,6 +2,7 @@
 
 ## Image util
 
+
 ``` 
 func ScaleImage(i image.Image, w, h int) (image.Image, error) 
 ```
@@ -14,6 +15,7 @@ i: Image need to scale width and height
 w: output width
 
 h: output height
+
 
 ```
 func EncodeImage(buf io.Writer, i image.Image, ext string) error
@@ -28,6 +30,7 @@ i: image need to encode
 
 ext: extension of input image
 
+
 ```
 func GetImageByPath(path string) (draw.Image, string)
 ```
@@ -36,6 +39,7 @@ func GetImageByPath(path string) (draw.Image, string)
 **Input param:**
 
 path: path of image need to get
+
 
 ```
 func GetImageByPathWithRect(path string, rect image.Rectangle) (draw.Image, string)
@@ -49,6 +53,7 @@ path: path of image need to get
 rect: rectangle of image
 
 ## Pagination
+
 
 ```
 type (
@@ -73,6 +78,7 @@ type (
 )
 ```
 
+
 ```
 func CreatePager(ctx context.Context, count, perpage, current int64) (*Pager, error)
 ```
@@ -88,6 +94,7 @@ perpage: number result per page
 
 current: current page
 
+
 ```
 func getLocation(location string, page int64) string
 ```
@@ -102,6 +109,7 @@ page: specified page need to get location
 
 ## Param Ulti
 
+
 ```
 func paramTo(kind reflect.Kind, param string) (interface{}, bool, error)
 ```
@@ -113,6 +121,7 @@ kind: type need to convert to
 
 param: a URL param
 
+
 ```
 func ParamToInt64(param string) (int64, bool, error)
 ```
@@ -121,6 +130,7 @@ func ParamToInt64(param string) (int64, bool, error)
 **Input param:**
 
 param: a URL param
+
 
 ```
 func ParamToStr(param string) (string, bool, error)
@@ -133,6 +143,7 @@ param: a URL param
 
 ## Ultility
 
+
 ```
 func Random(n int) string
 ```
@@ -141,6 +152,7 @@ func Random(n int) string
 **Input param:**
 
 n: number of characters
+
 
 ```
 func RandomLC(n int) string
@@ -151,6 +163,7 @@ func RandomLC(n int) string
 
 n: number of characters
 
+
 ```
 func GetHash256(str string) string
 ```
@@ -160,6 +173,7 @@ func GetHash256(str string) string
 
 str: string
 
+
 ```
 func PasswordHash(pw string) (string, error)
 ```
@@ -168,6 +182,7 @@ func PasswordHash(pw string) (string, error)
 **Input param:**
 
 pw: password
+
 
 ```
 func PasswordVerify(hash, pw string) error
